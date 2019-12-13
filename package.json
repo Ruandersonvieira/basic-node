@@ -5,11 +5,12 @@
   "repository": "https://github.com/Ruandersonvieira/basic-node.git",
   "author": "Ruanderson Vieira <ruanderson@accalia.io>",
   "scripts": {
-    "dev" : "nodemon server.js"
+    "dev": "nodemon server.js"
   },
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.8.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
