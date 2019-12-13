@@ -1,0 +1,11 @@
+{
+  "name": "product-hunt-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Ruandersonvieira/basic-node.git",
+  "author": "Ruanderson Vieira <ruanderson@accalia.io>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
