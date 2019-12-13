@@ -1,18 +1,15 @@
 const express = require('express');
-const MongoClient = require('mongodb');
+const requireDir = require('require-dir');
+require('./src/config/db/Mongo');
+
+requireDir('./src/models');
 
 const app = express();
 
-const url = 'mongodb://localhost:27017/producthunter';
+app.use(express.json());
 
-MongoClient.connect(url, { useNewUrlParser : true });
+app.use('/api', require('./src/routes'));
 
-require('./src/models/Product');
-
-app.get('/', (req, res) => {
-  return res.json({ message: "working" });
-});
-
-app.listen(3333, () => {
-  console.log(`Server started on port`);
+app.listen(3338, () => {
+  console.log(`Server started`);
 });
