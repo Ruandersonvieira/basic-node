@@ -1,6 +1,6 @@
 const express = require('express');
 const requireDir = require('require-dir');
-const cors = require('cros');
+const cors = require('cors');
 require('./src/config/db/Mongo');
 
 requireDir('./src/models');
